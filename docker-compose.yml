@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  baota:
+    container_name: baota
+    # image: nzzaidi/baota-docker:clear
+    # image: nzzaidi/baota-docker:ln
+    image: nzzaidi/baota-docker:lnp
+    # image: nzzaidi/baota-docker:lnmp
+    network_mode: host
+    privileged: true
+    volumes:
+      - ./wwwroot:/www/wwwroot
+      - ./vhost:/www/server/panel/vhost
+      # - www:/www
+    restart: unless-stopped
+    # shm_size: '1gb'
+
+volumes:
+  www: 
