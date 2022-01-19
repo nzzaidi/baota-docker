@@ -49,7 +49,7 @@ jobs:
         with:
           context: clear/
           platforms: linux/amd64
-          file: clear/Dockerfile_clear
+          file: clear/Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/baota-docker:clear
@@ -94,7 +94,7 @@ jobs:
         with:
           context: ln/
           platforms: linux/amd64
-          file: ln/Dockerfile_ln
+          file: ln/Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/baota-docker:ln
@@ -139,7 +139,7 @@ jobs:
         with:
           context: lnp/
           platforms: linux/amd64
-          file: lnp/Dockerfile_lnp
+          file: lnp/Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/baota-docker:lnp
@@ -184,7 +184,7 @@ jobs:
         with:
           context: lnmp/
           platforms: linux/amd64
-          file: lnmp/Dockerfile_lnmp
+          file: lnmp/Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/baota-docker:lnmp
